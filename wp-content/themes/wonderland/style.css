@@ -709,7 +709,7 @@ textarea {
 --------------------------------------------------------------*/
 
 .section-hero {
-    padding-top: 27vh;
+    padding-top: 5vh;
     padding-bottom: 10vh;
     background: #F2F2F2;
     display: flex;
@@ -739,7 +739,7 @@ a.custom-logo-link img{
 --------------------------------------------- */
 
 header#masthead {
-	position:fixed;
+	/* position:fixed; */
     padding-top: 35px;
 }
 
