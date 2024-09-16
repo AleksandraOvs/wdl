@@ -799,7 +799,7 @@ nav#site-navigation {
 }
 
 .main-navigation a {
-	line-height: 1;
+	line-height: 120%;
 	color: var(--black);
 	font-weight: 300;
 	font-family: 'MartianMono-c', sans-serif;
