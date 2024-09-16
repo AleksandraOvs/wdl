@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "Liberation";
+    font-weight: 400;
+    src: local("Liberation Mono"),
+        url(LiberationMono-Regular.ttf) format("truetype"),
+        url(LiberationMono-Regular.woff) format("woff"),
+        url(LiberationMono-Regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono";
+    font-weight: 400;
+    src: local("Martian Mono"),
+        url(MartianMono-Regular.ttf) format("truetype"),
+        url(MartianMono-Regular.woff) format("woff"),
+        url(MartianMono-Regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono";
+    font-weight: 300;
+    src: local("Martian Mono"),
+        url(MartianMono-Light.ttf) format("truetype"),
+        url(MartianMono-Light.woff) format("woff"),
+        url(MartianMono-Light.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono";
+    font-weight: 500;
+    src: local("Martian Mono"),
+        url(MartianMono-Medium.ttf) format("truetype"),
+        url(MartianMono-Medium.woff) format("woff"),
+        url(MartianMono-Medium.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono";
+    font-weight: 600;
+    src: local("Martian Mono"),
+        url(MartianMono-SemiBold.ttf) format("truetype"),
+        url(MartianMono-SemiBold.woff) format("woff"),
+        url(MartianMono-SemiBold.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono-c";
+    font-weight: 300;
+    src: local("Martian Mono"),
+        url(MartianMono_Condensed-Light.ttf) format("truetype"),
+        url(MartianMono_Condensed-Light.woff) format("woff"),
+        url(MartianMono_Condensed-Light.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono-c";
+    font-weight: 400;
+    src: local("Martian Mono"),
+        url(MartianMono_Condensed-Regular.ttf) format("truetype"),
+        url(MartianMono_Condensed-Regular.woff) format("woff"),
+        url(MartianMono_Condensed-Regular.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "MartianMono-c";
+    font-weight: 600;
+    src: local("Martian Mono"),
+        url(MartianMono_Condensed-Medium.ttf) format("truetype"),
+        url(MartianMono_Condensed-Medium.woff) format("woff"),
+        url(MartianMono_Condensed-Medium.woff2) format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    src: local("Montserrat"),
+        url(montserrat-regular.ttf) format("truetype"),
+        url(montserrat-regular.woff) format("woff"),
+        url(montserrat-regular.woff2) format("woff2");
+    font-display: swap;
+}
