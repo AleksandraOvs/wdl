@@ -580,6 +580,14 @@ div#page {
     min-height: 100vh;
 }
 
+@media (max-width: 1440px){
+	.fixed-container{
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 7%;
+	}
+}
+
 /* Links
 --------------------------------------------- */
 a {
@@ -695,6 +703,32 @@ textarea:focus {
 	color: #111;
 }
 
+button.menu-toggle {
+    background: transparent;
+	margin: 0;
+    position: relative;
+    width: 35px;
+    height: 24px;
+    cursor: pointer;
+}
+
+button.menu-toggle span {
+    display: none;
+}
+
+.menu-toggle .bar {
+    background: var(--accent);
+    border-radius: 3px;
+    width: 35px;
+    height: 3px;
+}
+
+
+
+
+
+
+
 select {
 	border: 1px solid #ccc;
 }
@@ -709,7 +743,7 @@ textarea {
 --------------------------------------------------------------*/
 
 .section-hero {
-    padding-top: 5vh;
+    padding-top: 20vh;
     padding-bottom: 10vh;
     background: #F2F2F2;
     display: flex;
@@ -739,7 +773,8 @@ a.custom-logo-link img{
 --------------------------------------------- */
 
 header#masthead {
-	/* position:fixed; */
+	width: 100%;
+	position:fixed;
     padding-top: 35px;
 }
 
@@ -799,16 +834,60 @@ nav#site-navigation {
 }
 
 .main-navigation a {
-	line-height: 120%;
-	color: var(--black);
-	font-weight: 300;
-	font-family: 'MartianMono-c', sans-serif;
-	font-size: 14px;
-	text-transform: uppercase;
-	display: block;
-	text-decoration: none;
+	line-height: 160%;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    color: var(--black);
+    font-weight: 300;
+    font-family: 'MartianMono-c', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    /* display: inline-block; */
+    text-decoration: none;
+	transition: all .5s ease-in-out;
 }
 
+.main-navigation a:hover{
+	color: var(--accent);
+	transition: all .5s ease-in-out;
+}
+
+.main-navigation .menu-item-depth-0.menu-item-has-children a:after{
+	content: '';
+    width: 10px;
+    height: 7px;
+    display: block;
+    background: url(assets/images/svg/arrow-down.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+	transition: all .5s ease-in-out;
+}
+
+.sub-menu.menu-depth-1 .sub-menu-item .sub-menu-link:after {
+	content: none;
+}
+
+.main-navigation .menu-item-depth-1.menu-item-has-children .sub-menu-link:after{
+	content: '';
+    width: 10px;
+    height: 7px;
+    display: block;
+    background: url(assets/images/svg/arrow-down.svg) no-repeat;
+    background-size: contain;
+    background-position: center;
+	transition: all .5s ease-in-out;
+}
+
+.main-navigation .menu-item-depth-1.menu-item-has-children.active .sub-menu-link:after,
+.main-navigation .menu-item-depth-0.menu-item-has-children.active a:after{
+	transform: rotate(-90deg);
+	transition: all .5s ease-in-out;
+}
+
+.main-navigation .sub-sub-menu-item.menu-item-depth-2 .menu-link:after {
+    content: none;
+}
 ul.sub-menu {
     margin-left: 20px;
 }
@@ -865,7 +944,7 @@ ul#primary-menu li.menu-item-depth-1.active .sub-sub-menu{
 	display: none;
 } 
 
-@media (max-width: 37.5em) {
+@media (max-width: 992px) {
 
 	.menu-toggle {
 		display: block;
@@ -877,6 +956,14 @@ ul#primary-menu li.menu-item-depth-1.active .sub-sub-menu{
 	.menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
+}
+
+nav#site-navigation .menu-main-menu-container {
+    display: none;
+}
+
+.site-header .fixed-container {
+    align-items: center;
 }
 }
 
@@ -1335,4 +1422,44 @@ li.bottom-text__item span.current{
     position: absolute;
     bottom: 0;
     right: 10px;
+}
+
+@media (max-width: 1024px){
+	.section-hero__content__head-bottom {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	h2.site-title {
+		text-align: center;
+	}
+
+	.section-hero__content__slider-block {
+		flex-direction: column;
+		margin-top: 3vh;
+	}
+
+	.section-hero__content__slider-block__button {
+		width: 100%;
+		justify-content: center;
+	}
+
+	.section-hero__content__slider-block__slider {
+		width: 100%;
+		margin-top: 3vh;
+	}
+
+	.swiper-slide.hero-slider__slide.swiper-slide-active .slide-img {
+		width: auto;
+		height: auto;
+	}
+
+	.swiper-slide.hero-slider__slide .slide-img {
+		width: 100%;
+		max-height: 200px;
+	}
+
+	.swiper-slide.hero-slider__slide.swiper-slide-active .bottom-text {
+		width: 100%;
+	}
 }

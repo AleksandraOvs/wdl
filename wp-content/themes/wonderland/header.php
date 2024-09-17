@@ -30,7 +30,13 @@
 		<header id="masthead" class="site-header">
 			<div class="fixed-container">
 				<nav id="site-navigation" class="main-navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'wonderland'); ?></button>
+					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+						<span><?php esc_html_e('Primary Menu', 'wonderland'); ?></span>
+							<div class="bar"></div>
+							<div class="bar"></div>
+							<div class="bar"></div>
+
+						</button>
 					<?php
 					wp_nav_menu(
 						array(

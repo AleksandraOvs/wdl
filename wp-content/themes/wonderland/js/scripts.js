@@ -7,11 +7,11 @@ jQuery(document).ready(function($)  {
     // Вверх и показ верхнего меню
     const headerChange = () => {
         const
-          mainBlock = document.querySelector('body');
+          mainBlock = document.querySelector('#page.site');
   
     
          window.addEventListener('scroll', () => {
-           if (-mainBlock.getBoundingClientRect().top > 50) {
+           if (-mainBlock.getBoundingClientRect().top > 5) {
               headerFront.classList.add('header-scroll');
           
            } else {
